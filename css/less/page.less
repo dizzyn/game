@@ -1,0 +1,116 @@
+html {
+    /*    background: #9acde2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAANqklEQ…fzWEFoPVW/J/NjSjomSWGHBnViDGwdVuX7HM3BLx0yGVP+Abekm5AbQE7CAAAAAElFTkSuQmCC);
+        -webkit-font-smoothing: antialiased;
+        -webkit-box-shadow: inset 0 0 18.75em rgba(0,0,0,.5);
+        -moz-box-shadow: inset 0 0 18.75em rgba(0,0,0,.5);
+        box-shadow: inset 0 0 18.75em rgba(0,0,0,.5);
+        height: 100%;*/
+}
+
+.page-inner {
+    max-width: 600px;
+    margin: 60px auto;
+    background: white;
+    padding: 20px;
+
+    img {
+        width: 100%;
+    }
+
+    //index
+    .welcome-message {
+        color: green;
+        text-align: center;
+        padding: 20px 0 40px;
+        font-style: italic;
+    }
+
+    .list-group-teams {
+        .list-group-item {
+            .list-group-item-text {
+                padding: 14px 0;
+            }
+        }
+    }
+
+    //dashboard
+    .stages {
+        .clearfix();
+        li {
+            display: block;
+            float: left;
+            width: (100% / 5);
+            a, span {
+                .border-radius(5px);
+                display: block;
+                padding: 15px;
+                background: #e8e8e8;
+                height: 52px;
+                margin: 5px;
+                text-align: center;
+                line-height: 22px;
+                font-size: 32px;
+                color: #98CBE0;
+                text-decoration: none;
+            }
+            &.active {
+                a {
+                    background: lightsalmon;
+                    color: black;
+                    &:hover {
+                        color: #a94442;
+                    }
+                } 
+            }
+            &.passed {
+                a {
+                    background: lightgray;
+                    color: black;
+                } 
+            }
+        }
+    }
+
+    //stage
+    .stage {
+        .desc {
+            padding: 0px 15px;
+            p {
+                padding-top: 15px;
+            }
+        }
+    }
+
+    form {
+        padding: 20px 0 0 0;
+    }
+    
+    //footer
+    .footer {
+        text-align: right;
+        margin-right: 10px;
+        margin-top: 30px;
+        color: #aaa;
+        font-style: italic;
+        .clearfix();
+        .back {
+            float: left;
+        }
+        a {
+            color: #aaa;
+            font-style: italic;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .page-inner {
+        max-width: 100%;
+        margin: 3px;
+        padding: 2px;
+    }
+}
+
+@-ms-viewport {
+	width: device-width;
+}

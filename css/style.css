@@ -1,0 +1,180 @@
+@import "less-ext/bootstrap.min.css";
+
+@import "less-ext/bootstrap-theme.min.css";
+html,
+body,
+div,
+form,
+fieldset,
+legend,
+label {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+th,
+td {
+  text-align: left;
+  vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+th,
+td,
+caption {
+  font-weight: normal;
+}
+img {
+  border: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: 'archivonarrow-bold-webfont';
+  src: url('/.../fonts/archivonarrow-bold-webfont.eot');
+  src: url('/.../fonts/archivonarrow-bold-webfont.woff') format('woff'), url('/.../fonts/archivonarrow-bold-webfont.ttf') format('truetype'), url('/.../fonts/archivonarrow-bold-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'archivonarrow-regular-webfont';
+  src: url('/.../fonts/archivonarrow-regular-webfont.eot');
+  src: url('/.../fonts/archivonarrow-regular-webfont.woff') format('woff'), url('/.../fonts/archivonarrow-regular-webfont.ttf') format('truetype'), url('/.../fonts/archivonarrow-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  /*    background: #9acde2 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAANqklEQ…fzWEFoPVW/J/NjSjomSWGHBnViDGwdVuX7HM3BLx0yGVP+Abekm5AbQE7CAAAAAElFTkSuQmCC);
+        -webkit-font-smoothing: antialiased;
+        -webkit-box-shadow: inset 0 0 18.75em rgba(0,0,0,.5);
+        -moz-box-shadow: inset 0 0 18.75em rgba(0,0,0,.5);
+        box-shadow: inset 0 0 18.75em rgba(0,0,0,.5);
+        height: 100%;*/
+
+}
+.page-inner {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  padding: 20px;
+}
+.page-inner img {
+  width: 100%;
+}
+.page-inner .welcome-message {
+  color: green;
+  text-align: center;
+  padding: 20px 0 40px;
+  font-style: italic;
+}
+.page-inner .list-group-teams .list-group-item .list-group-item-text {
+  padding: 14px 0;
+}
+.page-inner .stages {
+  *zoom: 1;
+}
+.page-inner .stages:before,
+.page-inner .stages:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.page-inner .stages:after {
+  clear: both;
+}
+.page-inner .stages li {
+  display: block;
+  float: left;
+  width: 20%;
+}
+.page-inner .stages li a,
+.page-inner .stages li span {
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  display: block;
+  padding: 15px;
+  background: #e8e8e8;
+  height: 52px;
+  margin: 5px;
+  text-align: center;
+  line-height: 22px;
+  font-size: 32px;
+  color: #98CBE0;
+  text-decoration: none;
+}
+.page-inner .stages li.active a {
+  background: lightsalmon;
+  color: black;
+}
+.page-inner .stages li.active a:hover {
+  color: #a94442;
+}
+.page-inner .stages li.passed a {
+  background: lightgray;
+  color: black;
+}
+.page-inner .stage .desc {
+  padding: 0px 15px;
+}
+.page-inner .stage .desc p {
+  padding-top: 15px;
+}
+.page-inner form {
+  padding: 20px 0 0 0;
+}
+.page-inner .footer {
+  text-align: right;
+  margin-right: 10px;
+  margin-top: 30px;
+  color: #aaa;
+  font-style: italic;
+  *zoom: 1;
+}
+.page-inner .footer:before,
+.page-inner .footer:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.page-inner .footer:after {
+  clear: both;
+}
+.page-inner .footer .back {
+  float: left;
+}
+.page-inner .footer a {
+  color: #aaa;
+  font-style: italic;
+}
+@media (max-width: 960px) {
+  .page-inner {
+    max-width: 100%;
+    margin: 3px;
+    padding: 2px;
+  }
+}
+@-ms-viewport {
+  width: device-width;
+}

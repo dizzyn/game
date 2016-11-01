@@ -1,0 +1,1 @@
+echo TakovyPenize | c:\Users\t\Projects\_tools\Python27\python.exe "c:\Users\t\Projects\_tools\google_appengine\appcfg.py" --email=tom.randus@gmail.com --passin rollback "c:\Users\t\Projects\Summgame"

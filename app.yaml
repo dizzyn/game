@@ -1,0 +1,27 @@
+application: summit-game
+version: 1
+runtime: php
+api_version: 1
+
+handlers:
+
+- url: /css
+  static_dir: css
+
+- url: /favicon.ico
+  script: favicon.ico
+
+- url: /img
+  static_dir: img
+
+- url: /js
+  static_dir: js
+
+- url: /dashboard*
+  script: index.php
+
+- url: /stage*
+  script: index.php
+
+- url: /.*
+  script: index.php
