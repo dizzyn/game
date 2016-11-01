@@ -7,8 +7,8 @@ global $welcomeMessage, $teamList, $fileKey;
 $publicGameKey = "0AvBjdeDScfvNdEpKOXZkYjFEbDVrX080OTBEQ2VHLWc";
 $cityFileKey = "0AlldIuyJ6qegdDBaYzU3ZnFqMDcyOHRmbHBMemNPRnc";
 $summitFileKey = "0AvBjdeDScfvNdFlaUkRrV0RiZExoazJPREpjMy1wRUE";
-
-$fileKey = $publicGameKey;
+$MSDFileKey = "1lvsp1b1kZZINvwxi84XafFI4Qj-s3BqEqDflOA1gxeM";
+$fileKey = $MSDFileKey;
 
 function getWelcomeMessage() {
     global $welcomeMessage, $fileKey;
@@ -155,7 +155,7 @@ if ($action == "records") {
             echo file_get_contents("gs://synkac-records/records.html");
             echo "</body></html>";
             die();
-        } else if ($action == "choiceteam") { //team selected - go to the team dashboard 
+        } else if ($action == "choiceteam") { //team selected - go to the team dashboard
             if ($_COOKIE["team"] !== $_GET["id"]) {
                 setcookie("team", $_GET["id"], time() + 3600 * 4);
                 setcookie("stage", "", time() + 3600 * 4);
@@ -197,7 +197,7 @@ if ($action == "records") {
                     $teamProgress = $teamProgress + 1;
                     setcookie("teamProgress", $teamProgress, time() + 3600 * 4);
                     setcookie("stage", $teamProgress, time() + 3600 * 4);
-                } else { //user has more stages but playin' in history 
+                } else { //user has more stages but playin' in history
                     setcookie("stage", $stageId + 1, time() + 3600 * 4);
                 }
 
@@ -371,15 +371,15 @@ if ($action == "records") {
                 }
 
     //            var_dump($_SERVER);
-                
+
                 $routeTo = $_SERVER["REQUEST_URI"];
-                
+
                 $rpos = strpos($routeTo, "?");
-      
+
                 if ($rpos !== FALSE) {
                     $routeTo = substr($routeTo, 0, $rpos);
                 }
-                
+
                 $routeTo = str_replace("/", "", $routeTo);
 
                 routeTo($routeTo);
